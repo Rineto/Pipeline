@@ -31,7 +31,7 @@ So far, the following steps have been completed:
   - missingness by variable
   - duplicate checks
   - range checks for key variables
-  - initial parsing of composite fields (Team & Contract)
+  - - Began initial string cleaning (Team & Contract parsing and text normalization)
 
 A preliminary problem inventory has been identified and will guide the cleaning stages.
 
