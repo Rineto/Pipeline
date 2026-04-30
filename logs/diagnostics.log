@@ -1,0 +1,5 @@
+[2026-04-30 14:33:19] === 01_ingest.R — start === 
+[2026-04-30 14:33:20] raw ingest                       rows=  18979  cols= 23 
+ 
+[2026-04-30 14:33:20] Renamed column '↓OVA' -> 'OVA' (removed non-ASCII). 
+[2026-04-30 14:33:20] === 01_ingest.R — end === 

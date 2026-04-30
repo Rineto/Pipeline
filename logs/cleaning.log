@@ -1,0 +1,20 @@
+[2026-04-30 14:33:18] === 03d_dedup.R — start === 
+[2026-04-30 14:33:19] === 03c_clean_dates.R — start === 
+[2026-04-30 14:33:19] === 03b_clean_numeric.R — start === 
+[2026-04-30 14:33:19] === 03a_clean_strings.R — start === 
+[2026-04-30 14:33:20] Column names canonicalised (snake_case). Example: 'Team & Contract' -> 'team_contract' 
+[2026-04-30 14:33:20] Parsed Team & Contract. contract_type tally: Contract=17728, Loan=1013, Unknown=238 
+[2026-04-30 14:33:21] foot normalised. Distribution: Left=4534, Right=14445 
+[2026-04-30 14:33:21] after 03a string cleaning        rows=  18979  cols= 27  (Δrows=+0, Δcols=+4) 
+[2026-04-30 14:33:21] === 03a_clean_strings.R — end === 
+[2026-04-30 14:33:22] Recoded €0 -> NA: value=249, wage=238, release_clause=1262. 
+[2026-04-30 14:33:22] Height cm range after parse: [154.9, 205.7]. Weight kg range: [49.9, 110.2] 
+[2026-04-30 14:33:22] after 03b numeric cleaning       rows=  18979  cols= 32  (Δrows=+0, Δcols=+5) 
+[2026-04-30 14:33:22] === 03b_clean_numeric.R — end === 
+[2026-04-30 14:33:22] Date parse [joined]: input non-blank=18979, parsed=18979, failed=0 
+[2026-04-30 14:33:22] Date parse [loan_date_end]: input non-blank=18979, parsed=1013, failed=17966 
+[2026-04-30 14:33:22] contract_status tally: On Loan=1013, Under Contract=17728, Unknown=238 
+[2026-04-30 14:33:22] after 03c date cleaning          rows=  18979  cols= 33  (Δrows=+0, Δcols=+1) 
+[2026-04-30 14:33:22] === 03c_clean_dates.R — end === 
+[2026-04-30 14:33:24] Dropping 1 exact-duplicate ID rows: 
+[2026-04-30 14:33:24]   id=251698  name='Kevin Berlaso'  team='Ecuador Free' 
